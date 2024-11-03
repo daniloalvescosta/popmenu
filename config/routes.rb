@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :menu_items
   resources :menus
 
-  get "up" => "rails/health#show", as: :rails_health_check
+  post '/data_imports', to: 'data_imports#create'
 end
