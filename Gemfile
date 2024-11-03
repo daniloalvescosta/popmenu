@@ -12,6 +12,7 @@ gem 'rspec'
 gem 'rspec-rails'
 gem 'solargraph'
 gem 'factory_bot_rails'
+gem 'shoulda-matchers', '~> 6.2'
 gem 'rubocop', '~> 1.68'
 
 
