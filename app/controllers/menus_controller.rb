@@ -36,6 +36,6 @@ class MenusController < ApplicationController
     end
 
     def menu_params
-      params.require(:menu).permit(:title)
+      params.require(:menu).permit(:title, :restaurant_id)
     end
 end

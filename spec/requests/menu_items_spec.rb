@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe "/menu_items", type: :request do
 
-  let(:menu) { create(:menu)}
+  let(:restaurant) { create(:restaurant) }
+  let(:menu) { create(:menu, restaurant: restaurant) }
 
   let(:valid_attributes) {
     {
